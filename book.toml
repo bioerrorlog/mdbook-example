@@ -7,3 +7,4 @@ title = "mdbook example"
 
 [output.html]
 git-repository-url = "https://github.com/bioerrorlog/mdbook-example"
+git-repository-icon = "fa-github"
