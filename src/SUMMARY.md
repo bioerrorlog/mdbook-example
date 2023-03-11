@@ -2,8 +2,10 @@
 
 [Introduction](./README.md)
 
-# Section 1
+[Internal link examples](./internal_links.md)
 
+# Section 1
+- [Introduction](./section_1/README.md)
 - [AAA](./section_1/aaa.md)
 - [BBB](./section_1/bbb.md)
 
