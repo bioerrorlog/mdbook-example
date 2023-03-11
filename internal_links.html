@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Sub bbb - mdbook example</title>
+        <title>Internal link examples - mdbook example</title>
 
 
         <!-- Custom HTML head -->
@@ -12,21 +12,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        <link rel="icon" href="../favicon.svg">
-        <link rel="shortcut icon" href="../favicon.png">
-        <link rel="stylesheet" href="../css/variables.css">
-        <link rel="stylesheet" href="../css/general.css">
-        <link rel="stylesheet" href="../css/chrome.css">
-        <link rel="stylesheet" href="../css/print.css" media="print">
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="../fonts/fonts.css">
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../highlight.css">
-        <link rel="stylesheet" href="../tomorrow-night.css">
-        <link rel="stylesheet" href="../ayu-highlight.css">
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
@@ -35,7 +35,7 @@
     <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
-            var path_to_root = "../";
+            var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="../internal_links.html">Internal link examples</a></li><li class="chapter-item expanded affix "><li class="part-title">Section 1</li><li class="chapter-item expanded "><a href="../section_1/index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../section_1/aaa.html"><strong aria-hidden="true">2.</strong> AAA</a></li><li class="chapter-item expanded "><a href="../section_1/bbb.html"><strong aria-hidden="true">3.</strong> BBB</a></li><li class="chapter-item expanded affix "><li class="part-title">Section 2</li><li class="chapter-item expanded "><a href="../section_2/aaa.html"><strong aria-hidden="true">4.</strong> AAA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../section_2/sub_aaa.html"><strong aria-hidden="true">4.1.</strong> Sub aaa</a></li></ol></li><li class="chapter-item expanded "><a href="../section_2/bbb.html"><strong aria-hidden="true">5.</strong> BBB</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../section_2/sub_bbb.html" class="active"><strong aria-hidden="true">5.1.</strong> Sub bbb</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../appendix/index.html">Here is appendixes</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="internal_links.html" class="active">Internal link examples</a></li><li class="chapter-item expanded affix "><li class="part-title">Section 1</li><li class="chapter-item expanded "><a href="section_1/index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="section_1/aaa.html"><strong aria-hidden="true">2.</strong> AAA</a></li><li class="chapter-item expanded "><a href="section_1/bbb.html"><strong aria-hidden="true">3.</strong> BBB</a></li><li class="chapter-item expanded affix "><li class="part-title">Section 2</li><li class="chapter-item expanded "><a href="section_2/aaa.html"><strong aria-hidden="true">4.</strong> AAA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="section_2/sub_aaa.html"><strong aria-hidden="true">4.1.</strong> Sub aaa</a></li></ol></li><li class="chapter-item expanded "><a href="section_2/bbb.html"><strong aria-hidden="true">5.</strong> BBB</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="section_2/sub_bbb.html"><strong aria-hidden="true">5.1.</strong> Sub bbb</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="appendix/index.html">Here is appendixes</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -115,7 +115,7 @@
                     <h1 class="menu-title">mdbook example</h1>
 
                     <div class="right-buttons">
-                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         <a href="https://github.com/bioerrorlog/mdbook-example" title="Git repository" aria-label="Git repository">
@@ -147,17 +147,44 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="sub-bbb"><a class="header" href="#sub-bbb">sub bbb</a></h1>
+                        <h1 id="internal-link-examples"><a class="header" href="#internal-link-examples">Internal link Examples</a></h1>
+<h2 id="normal-links"><a class="header" href="#normal-links">Normal Links</a></h2>
+<ul>
+<li>Link to Section 1 aaa.md with <a href="./section_1/aaa.html">./section_1/aaa.md</a></li>
+</ul>
+<h2 id="readmemd-links"><a class="header" href="#readmemd-links">README.md Links</a></h2>
+<ul>
+<li>Link to Section 1 README.md with <a href="./section_1/README.html">./section_1/README.md</a>
+<ul>
+<li>Failed (404)</li>
+</ul>
+</li>
+<li>Link to Section 1 README.md with <a href="./section_1/README.html">./section_1/README.html</a>
+<ul>
+<li>Failed (404)</li>
+</ul>
+</li>
+<li>Link to Section 1 README.md with <a href="./section_1/index.html">./section_1/index.md</a>
+<ul>
+<li>Succeeded</li>
+</ul>
+</li>
+<li>Link to Section 1 README.md with <a href="./section_1/index.html">./section_1/index.html</a>
+<ul>
+<li>Succeeded</li>
+</ul>
+</li>
+</ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../section_2/bbb.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="../appendix/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="section_1/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -167,11 +194,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../section_2/bbb.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../appendix/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="section_1/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
@@ -186,13 +213,13 @@
         </script>
 
 
-        <script src="../elasticlunr.min.js"></script>
-        <script src="../mark.min.js"></script>
-        <script src="../searcher.js"></script>
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
 
-        <script src="../clipboard.min.js"></script>
-        <script src="../highlight.js"></script>
-        <script src="../book.js"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
 

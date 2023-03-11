@@ -71,10 +71,12 @@
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = null;
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
@@ -82,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">Section 1</li><li class="chapter-item expanded "><a href="section_1/aaa.html"><strong aria-hidden="true">1.</strong> AAA</a></li><li class="chapter-item expanded "><a href="section_1/bbb.html"><strong aria-hidden="true">2.</strong> BBB</a></li><li class="chapter-item expanded affix "><li class="part-title">Section 2</li><li class="chapter-item expanded "><a href="section_2/aaa.html"><strong aria-hidden="true">3.</strong> AAA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="section_2/sub_aaa.html"><strong aria-hidden="true">3.1.</strong> Sub aaa</a></li></ol></li><li class="chapter-item expanded "><a href="section_2/bbb.html"><strong aria-hidden="true">4.</strong> BBB</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="section_2/sub_bbb.html"><strong aria-hidden="true">4.1.</strong> Sub bbb</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="appendix/index.html">Here is appendixes</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="internal_links.html">Internal link examples</a></li><li class="chapter-item expanded affix "><li class="part-title">Section 1</li><li class="chapter-item expanded "><a href="section_1/index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="section_1/aaa.html"><strong aria-hidden="true">2.</strong> AAA</a></li><li class="chapter-item expanded "><a href="section_1/bbb.html"><strong aria-hidden="true">3.</strong> BBB</a></li><li class="chapter-item expanded affix "><li class="part-title">Section 2</li><li class="chapter-item expanded "><a href="section_2/aaa.html"><strong aria-hidden="true">4.</strong> AAA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="section_2/sub_aaa.html"><strong aria-hidden="true">4.1.</strong> Sub aaa</a></li></ol></li><li class="chapter-item expanded "><a href="section_2/bbb.html"><strong aria-hidden="true">5.</strong> BBB</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="section_2/sub_bbb.html"><strong aria-hidden="true">5.1.</strong> Sub bbb</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="appendix/index.html">Here is appendixes</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
